@@ -14,4 +14,4 @@ FROM alpine:latest
 
 COPY --from=builder simpleproxy/simpleproxy bin/simpleproxy
 
-ENTRYPOINT simpleproxy
+ENTRYPOINT ["simpleproxy"]
